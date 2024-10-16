@@ -1,0 +1,39 @@
+@media(min-width: 736px) and (max-width: 1024px){
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 1025px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    .intro{ grid-area: intro;}
+    .Sub2{ grid-area: Sub2;}
+    .Sub3 { grid-area: Sub3;}
+    .Sub4{ grid-area: Sub4;}
+    .Sub5{ grid-area: Sub5;}
+    .Sub6{ grid-area: Sub6;}
+
+
+
+    .container{
+        display: grid;
+        grid-template-areas: 
+        'intro Sub2 Sub2'
+        'Sub3 Sub4 Sub4'
+        'Sub5 Sub6 Sub6';
+        ;
+    }
+}
